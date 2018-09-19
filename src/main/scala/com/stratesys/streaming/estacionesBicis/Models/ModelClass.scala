@@ -1,7 +1,7 @@
 package com.stratesys.streaming.estacionesBicis.Models
 
 object ModelClass {
-  case class Parent(
+  case class ParentStation(
                      stations: List[Station],
                      updateTime: BigInt)
   case class Station(
@@ -14,7 +14,6 @@ object ModelClass {
                       slots: String,
                       bikes: String,
                       status: String)
-
 
   case class StationFormatted(
                       id: Int,
